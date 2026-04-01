@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.description {
+  max-width: 600px;
+  margin: 10px auto 20px auto;
+  font-size: 14px;
+  color: #555;
+}
+
+#chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Circle styling */
+.node circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 6px;
+  font-size: 12px;
+  background: lightsteelblue;
+  border-radius: 5px;
+  pointer-events: none;
+}
