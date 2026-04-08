@@ -27,13 +27,35 @@ h1 {
   stroke-width: 1.5px;
 }
 
-/* Tooltip */
 .tooltip {
   position: absolute;
   text-align: center;
-  padding: 6px;
+  padding: 8px;
+  font-family: Arial, sans-serif;
   font-size: 12px;
-  background: lightsteelblue;
+  background: white;       /* Always white */
+  color: black;
   border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   pointer-events: none;
+}
+
+/* Container + filters layout */
+#container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#filters {
+  width: 200px;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+#chart {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }

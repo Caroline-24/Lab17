@@ -9,12 +9,24 @@
 <body>
 
   <h1>Spotify Tracks Genre</h1>
-  <p class="description">
+    <p class="description">
     This visualization shows the top 10 artists within each genre based on average popularity.
     Each color represents a different genre. Hover over circles to see details.
   </p>
 
-  <div id="chart"></div>
+  <div id="container">
+    <!-- Filter dropdown on the left -->
+    <div id="filters">
+  <label for="genre-select">Filter by Genre:</label>
+  <select id="genre-select">
+    <option value="all" selected>All Genres</option>
+    <!-- Other options will be added dynamically via JS -->
+  </select>
+</div>
+
+    <!-- Chart area -->
+    <div id="chart"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
